@@ -7,15 +7,29 @@ There is also a "Plus" version of the patch, which does the same thing, but addi
 
 ## Patching Instructions:
 
-1 - Extract your MAME Dangun Feveron rom archive (dfeveron.zip). Look for a file named "cv01-u19.bin". If you see this file, move on to the next step. If this file is not present in your dfeveron archive, then you need to find and patch it in your Fever SOS rom archive instead (feversos.zip).
+1 - Extract your MAME Dangun Feveron rom archive (dfeveron.zip). Look for two files named "cv01-u19.bin" and "cv01-u33.bin". If your dfeveron archive is missing one of these files, then you can most likely find and get a copy from your Fever SOS rom archive (feversos.zip).
 
-2 - Using your xdelta patcher of choice, apply one of the no-voices xdelta patches to "cv01-u19.bin". Make sure that your patched file has the same filename as the original.
+2 - Using your xdelta patcher of choice, apply the df-nvup.xdelta patch to "cv01-u33.bin". Make sure that your patched file has the same filename as the original.
 
-3 - Rezip the archive.
+3 - Apply one of the two "no voices" xdelta patches to "cv01-u19.bin". Make sure that your patched file has the same filename as the original.
+
+4 - Rezip the dfeveron rom archive with the two patched files (and whatever else was originally inside it).
   
   
 ##### NOTE: When you start up the patched rom, MAME will complain about wrong checksum. This is expected, and can be safely ignored. If necessary, the patching process can be verified using the hashes below:
   
+cv01-u33.bin
+
+(Original) &nbsp; CRC32:&nbsp; e53a7db3  
+(Original) &nbsp; MD5:  &nbsp; &nbsp;   eafca7b46e5302f39f665715df5f5e4f  
+(Original) &nbsp; SHA-1: &nbsp; ddced29f78dc3cc89038757b6577ba2ba0d8b041  
+  
+(Patched) &nbsp; CRC32:&nbsp; 68768afc  
+(Patched) &nbsp; MD5:  &nbsp; &nbsp;   d2659fb05f3c3b0f38bfe6ba5a0727b9  
+(Patched) &nbsp;  SHA-1: &nbsp; 7966f442320f500c36695b9d6fe5fa2ad48c5de0  
+
+&nbsp; &nbsp;  
+
 cv01-u19.bin (No Voices)
 
 (Original) &nbsp; CRC32:&nbsp; 5f5514da  
@@ -41,4 +55,5 @@ cv01-u19.bin (No Voices Plus)
 ## &nbsp;
 
 Patch by KMH  
-2023-05-13 - Released
+2023-05-13 - Released  
+2023-06-04 - Updated the patch to address a general Dangun Feveron audio issue (frequent audio crackling/popping when voices are triggered during gameplay)
