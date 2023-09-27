@@ -52,7 +52,8 @@ cv01-u19.bin (No Voices Plus)
 (Patched) &nbsp; MD5:  &nbsp; &nbsp;   49931f358bb864f63852df9da881d575  
 (Patched) &nbsp;  SHA-1: &nbsp; 11d5c321494e79f0948f7697c32fd185bf31d238  
 
-## &nbsp;
+&nbsp;
+##
 
 Patch by KMH  
 2023-05-13 - Released  
